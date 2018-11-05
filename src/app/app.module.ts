@@ -1,7 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// Routing Module
 import { AppRoutingModule } from './app-routing.module';
+
+// Module
+import { FeatureModule } from './feature/feature.module';
 
 // Component
 import { AppComponent } from './app.component';
@@ -20,6 +24,7 @@ import { LayoutComponent } from './layout/layout.component';
   ],
   imports: [
     BrowserModule,
+    FeatureModule,
     AppRoutingModule
   ],
   providers: [],
