@@ -28,6 +28,10 @@ const routes: Routes = [
     ]
   },
   {
+    path: 'feature',
+    loadChildren: './feature/feature.module#FeatureModule'
+  },
+  {
     path: 'login',
     component: LoginComponent
   },
@@ -40,7 +44,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    enableTracing: true,
     useHash: true
   })],
   exports: [RouterModule]
