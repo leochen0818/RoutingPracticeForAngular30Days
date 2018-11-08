@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
+  name = '';
+
   constructor(private router: Router) { }
 
   ngOnInit() {
